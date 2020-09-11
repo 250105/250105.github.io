@@ -1,0 +1,227 @@
+html, body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3{
+    margin-top: 8px;;
+}
+
+header{
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 100%;
+    z-index: 50;
+}
+
+.logo img{
+    width: 50px;
+    position: absolute;
+    margin-left: 13px;
+    float: left;
+}
+.efeito{
+    transition:500ms;
+}
+.efeito:hover{
+    background-color: rgba(0, 0, 0, 0.644);
+    border-radius: 20%;
+    transition: 500ms;
+}
+#menu{
+    float: right;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+li{
+    float: right;
+    padding: 20px 20px 22px 20px;
+    transition: 500ms;
+}
+
+li:hover{
+    transform:scale(1.22);
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+#imagem_fundo{
+    background-image: url(img/fundo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+#titulo{
+    color: black;
+    text-shadow: 2px 2px 8px #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 0%;
+    margin: 0;
+    font-size: 550%; 
+}
+
+.subtitulo{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    line-height: 1.5;
+    font-size: 150%;
+    font-weight: 100;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    border-top: 3px white solid;    
+}
+
+#acao{
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #000000be;
+    transition: 250ms;
+}
+#acao:hover{
+    background-color:goldenrod;
+    font-size: 40px;
+    transform: scale(3px);
+    border-radius: 40px;
+}
+#projeto{
+    background-color:rgb(209, 233, 255);
+}
+iframe{
+    transition: 500ms;
+}
+iframe:hover{
+    transform: scale(1.05);
+}
+
+.icone{
+    width: 55px;
+    padding: 20px;
+    border-radius: 50px;
+    transition: 500ms;
+}
+.icone:hover{
+    background-color: rgb(243, 180, 144);
+    transform:scale(1.22);
+    border-radius: 10%;   
+}
+section{
+    padding: 20px;
+    float: left;
+    text-align: center;
+}
+
+.imgtecnologia{
+    width: 80%;
+}
+#tecnologia{
+    background-image:url(img/tecnologia.png);
+    background-attachment: fixed;
+}
+.coluna{
+    float: left;
+    padding: 0 5%;
+    position: relative;    
+}
+
+.dois{
+    width: 40%;
+}
+
+.tres{
+    width: 29%;
+    padding: 0 2%;
+    transition: 500ms;
+}
+.tres:hover{
+    transform: scale(1.05);
+    background-color:rgba(0, 0, 0, 0.575) ;
+    border-radius: 10%;
+}
+.quatro{
+    width: 15%;
+}
+#sobre img:hover{
+    transform: scale(1.165);
+}
+#sobre img{
+    width: 50%;
+    transition: 500ms;
+}
+#metas{
+    background-color:rgb(240, 252, 216);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
+
+.logocontato{
+    width: 60px;
+}
+
+.fontes{
+    padding: 0;
+    transition: 500ms;
+}
+
+.fontes:hover{
+    transform: scale(1.22);
+}
+.tecnologiaagricola{
+    color: white;
+}
+@media all and (max-width: 768px){
+    #menu {
+        visibility: hidden;
+    }
+    .coluna, .dois, .tres, .quatro{
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+    #titulo{
+       font-size:200%;
+       display: block;
+    }
+    .subtitulo{
+        font-size: 80%;
+    }
+    #footer{
+        background-color: black;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        width: 100%;
+        text-align: center;
+        padding: 20 0 50 0;
+    }
+
+    .logocontato{
+        width: 15%;
+        padding: 0 8 0 8;
+    }
+}
